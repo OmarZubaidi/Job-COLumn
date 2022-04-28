@@ -1,18 +1,13 @@
-// Package imports
-import { Divider } from '@blueprintjs/core';
-
-// Local imports
 import Back from '../buttons/backButton';
-
-// Styling
 import './error.scss';
 
 function Error () {
   return (
       <div className='error'>
+        <div className='marginBottom'>
         Error 404: Page not found
-        <Divider />
-        <Back />
+        </div>
+        <Back/>
       </div>
   );
 }
