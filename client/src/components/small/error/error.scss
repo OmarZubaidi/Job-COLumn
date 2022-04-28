@@ -1,8 +1,21 @@
 .error {
   height: 100vh;
-  width: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 55px;
+}
+
+.bp4-button-text{
+  font-size: 55px;
+  padding-bottom: 5px;
+}
+
+.bp4-icon > svg {
+  height: 40px;
+  width: 40px;
+}
+.bp4-button{
+  margin-top: 10px;
 }

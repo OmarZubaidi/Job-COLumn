@@ -9,13 +9,11 @@ import './error.scss';
 
 function Error () {
   return (
-    <main>
       <div className='error'>
         Error 404: Page not found
         <Divider />
         <Back />
       </div>
-    </main>
   );
 }
 
