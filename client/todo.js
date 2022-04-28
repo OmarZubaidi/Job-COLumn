@@ -14,6 +14,7 @@
 //TODO refactor userForm to make it more readable
 //TODO restructure components folder and change names
 //TODO improve styling popup window
+//TODO style joblist (remove scrollbar)
 //? Strict mode incompatible with BlueprintJS lol look into that.
 
 //? Do you need use strict in every file?
