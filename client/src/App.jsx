@@ -8,7 +8,7 @@ import { FocusStyleManager } from '@blueprintjs/core';
 
 // Local imports
 import Jobs from './components/jobs/jobs';
-import Error from './components/small/error/error';
+import Error from './components/small/error/error.tsx';
 import Welcome from './components/welcome/welcome';
 import { ThemeProvider } from './components/contexts/theme';
 import { UserProvider } from './components/contexts/user';
