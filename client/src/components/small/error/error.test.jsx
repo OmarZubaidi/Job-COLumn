@@ -9,12 +9,14 @@ const RouterWrapper = ({ children }) => ( // TODO move into general file, we wil
 );
 
 describe('Error component', () => {
+
   test('should render text with correct text in the DOM', () => {
     render(<Error />, { wrapper: RouterWrapper });
     expect(screen.getByText('Error 404: Page not found')).toBeInTheDocument();
   });
 
   test('should render a <Back> component', () => {
-
+    render(<Error />, { wrapper: RouterWrapper });
+    expect(screen.getByText('Error 404: Page not found')).toBeInTheDocument();
   });
 });
