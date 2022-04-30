@@ -17,6 +17,6 @@ describe('Error component', () => {
 
   test('should render a <Back> component', () => {
     render(<Error />, { wrapper: RouterWrapper });
-    expect(screen.getByText('Error 404: Page not found')).toBeInTheDocument();
+    expect(screen.getByRole('button', {name: /Back/i})).toBeInTheDocument();
   });
 });
