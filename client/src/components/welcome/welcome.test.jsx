@@ -22,7 +22,7 @@ describe('Error component', () => {
      expect(screen.getByText('is a job board that considers the cost of living.')).toBeInTheDocument();
      expect(screen.getByRole('button', {name: /Start/i})).toBeInTheDocument();
      expect(screen.getByLabelText("Toggle Light Mode")).toBeInTheDocument();
-     expect(screen.getByDisplayValue("20000")).toBeInTheDocument();
+     expect(screen.getByDisplayValue("20000")).toBeInTheDocument(); // there is probably a better test to find out if that component has rendered
      expect(screen.getByText("London")).toBeInTheDocument();
   });
 
