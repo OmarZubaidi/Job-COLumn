@@ -18,7 +18,7 @@ export function userForm ({
       <div id='user-salary'>
         <Numeric
           defaultValue={defaultValue}
-          fill={'false'}
+          fill={true}
           onValueChange={onValueChange}
         />
       </div>

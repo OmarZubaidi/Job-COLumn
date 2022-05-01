@@ -24,7 +24,7 @@ describe('Cities component', () => {
   test('Cities selector should render correctly', () => {
     render(<Cities/>, { wrapper: MockWrapper });
     expect(screen.getByRole('button', {name: 'Leeds'})).toBeInTheDocument();
-});
+  });
 
   test('Cities selector should update current location correctly', async () => {
     render(<Cities/>, { wrapper: MockWrapper });

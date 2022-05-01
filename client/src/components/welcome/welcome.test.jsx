@@ -43,6 +43,6 @@ describe('Error component', () => {
 
     userEvent.clear(input);
     userEvent.type(input, '15000');
-    expect(input.value).toBe('15000')
+    expect(input.value).toBe('15000');
   });
 });
