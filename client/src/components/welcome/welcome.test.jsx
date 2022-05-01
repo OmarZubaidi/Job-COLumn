@@ -1,9 +1,11 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from '../contexts/theme';
 import { UserProvider } from '../contexts/user';
 import Welcome from './welcome'
-const Wrapper = ({ children }) => ( // TODO move into general file, we will need this in all components that include useNavigate
+import userEvent from "@testing-library/user-event";
+
+const MockWrapper = ({ children }) => (
   <MemoryRouter>
     <UserProvider>
       <ThemeProvider>
@@ -15,17 +17,32 @@ const Wrapper = ({ children }) => ( // TODO move into general file, we will need
 
 describe('Error component', () => {
 
-  test('Welcome should render correctly', () => {
-    render(
-          <Welcome />
-     , { wrapper: Wrapper });
+  test('Welcome should render itself and children correctly', () => {
+    render(<Welcome />, { wrapper: MockWrapper });
      expect(screen.getByText('is a job board that considers the cost of living.')).toBeInTheDocument();
      expect(screen.getByRole('button', {name: /Start/i})).toBeInTheDocument();
      expect(screen.getByLabelText("Toggle Light Mode")).toBeInTheDocument();
-     expect(screen.getByDisplayValue("20000")).toBeInTheDocument(); // there is probably a better test to find out if that component has rendered
+     expect(screen.getByDisplayValue("20000")).toBeInTheDocument();
      expect(screen.getByText("London")).toBeInTheDocument();
   });
 
-  // TODO
-  // test('should render form children', () => {}
+  // Testing this here and not in child component because
+  // other children handle updates themselves but this one doesn't
+  test('Salary input should update correctly', () => {
+    render(<Welcome />, { wrapper: MockWrapper });
+    const input = screen.getByDisplayValue("20000");
+
+    const incrementButton = screen.getByRole('button', {name:'increment'})
+    const decrementButton = screen.getByRole('button', {name:'decrement'})
+
+    userEvent.click(incrementButton);
+    userEvent.click(incrementButton);
+    expect(input.value).toBe('22000')
+    userEvent.click(decrementButton);
+    expect(input.value).toBe('21000')
+
+    userEvent.clear(input);
+    userEvent.type(input, '15000');
+    expect(input.value).toBe('15000')
+  });
 });
