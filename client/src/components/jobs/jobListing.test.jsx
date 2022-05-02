@@ -26,6 +26,7 @@ describe('JobListing component', ()=>{
     userEvent.click(money);
     const map = await screen.findByTitle('map')
     expect(map).toBeInTheDocument();
+    //TODO: ⬇️⬇️⬇️⬇️⬇️
     /* const map = screen.getByTitle('map')
     expect(map).not.toBeInTheDocument(); */
   });
