@@ -9,7 +9,7 @@ export function ThemeProvider ({ children }) {
 
   // Because BlueprintJS' dark mode toggle sucks
   const body = document.body;
-  body.className = `background ${darkMode ? 'dark' : 'light'}`
+  body.className = `background ${darkMode ? 'bp4-dark dark' : 'bp4-body light'}`
 
   function toggleTheme () {
     toggleDarkMode(mode => !mode);
