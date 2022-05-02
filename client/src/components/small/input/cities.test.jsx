@@ -35,7 +35,7 @@ describe('Cities component', () => {
 
     await waitFor(async () => {
       await wait();
-    })
+    });
 
     const listItemNode = await screen.findByText('Glasgow');
     userEvent.click(listItemNode);

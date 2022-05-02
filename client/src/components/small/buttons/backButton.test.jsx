@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter, MemoryRouter, Router } from 'react-router-dom';
+import { MemoryRouter, Router } from 'react-router-dom';
 import {createMemoryHistory} from 'history';
 
 import BackButton from './backButton';
