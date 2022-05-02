@@ -5,7 +5,7 @@ import { H5, Icon, InputGroup } from '@blueprintjs/core';
 import MultiCity from '../../small/input/multipleCities';
 import Numeric from '../../small/input/numeric';
 
-export function filtersDefined ({
+export default function filtersDefined ({
   keywords,
   keywordsOnChange,
   numericOnChange

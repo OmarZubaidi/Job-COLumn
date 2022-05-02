@@ -9,7 +9,7 @@ import SecondaryButton from '../../small/buttons/secondaryButton';
 // Styling
 import css from '../../contexts/themes.scss';
 
-export function sortDefined ({
+export default function sortDefined ({
   filterAndSort,
   sortOrder,
   sortOnClick
@@ -19,10 +19,13 @@ export function sortDefined ({
         <H5>Sort by</H5>
         <Sorts />
         <SecondaryButton
-          icon={<Icon
+          ariaLabel={`sort-button`}
+          icon={
+            <Icon
             color={css.rose}
             icon={`sort-${sortOrder}`}
-          />}
+            />
+          }
           onClick={sortOnClick}
         />
         <PrimaryButton

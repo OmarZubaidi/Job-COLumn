@@ -1,7 +1,7 @@
 // Local imports
 import { numberFormatter } from '../index';
 
-export function userDetails ({
+export default function userDetails ({
   location,
   salary
 }) {

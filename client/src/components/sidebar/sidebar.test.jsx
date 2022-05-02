@@ -28,28 +28,28 @@ const MockWrapper = ({ children }) => (
   </MemoryRouter>
 );
 
-describe('Dark mode button component', () => {
+describe('Sidebar component', () => {
 
   test('Should render itself and children correctly', () => {
     render(<Sidebar/>, { wrapper: MockWrapper });
 
-    expect(screen.getByText('logo.svg')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Toggle navbar button' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Toggle Dark Mode' })).toBeInTheDocument();
-    expect(screen.getByText('Current Location')).toBeInTheDocument();
-    expect(screen.getByText('Filter')).toBeInTheDocument();
-    expect(screen.getByText('Sort by')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Back button' })).toBeInTheDocument();
+    expect(screen.getByText(/logo.svg/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Toggle navbar button/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Toggle Dark Mode/i })).toBeInTheDocument();
+    expect(screen.getByText(/Current Location/i)).toBeInTheDocument();
+    expect(screen.getByText(/Filter/i)).toBeInTheDocument();
+    expect(screen.getByText(/Sort by/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Back button/i })).toBeInTheDocument();
   });
 
   test('Toggle navbar button hides navbar component', () => {
     render(<Sidebar/>, { wrapper: MockWrapper });
-    const toggleButton = screen.getByRole('button', { name: 'Toggle navbar button' });
+    const toggleButton = screen.getByRole('button', { name: /Toggle navbar button/i });
 
-    expect(screen.getByText('Current Location')).toBeInTheDocument();
+    expect(screen.getByText(/Current Location/i)).toBeInTheDocument();
     userEvent.click(toggleButton);
-    expect(screen.queryByText('Current Location')).not.toBeInTheDocument();
+    expect(screen.queryByText(/Current Location/i)).not.toBeInTheDocument();
     userEvent.click(toggleButton);
-    expect(screen.getByText('Current Location')).toBeInTheDocument();
+    expect(screen.getByText(/Current Location/i)).toBeInTheDocument();
   });
 });
