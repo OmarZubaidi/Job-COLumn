@@ -1,5 +1,5 @@
 import Map from './map';
-import { getByTitle, render, screen } from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
 
 
 
