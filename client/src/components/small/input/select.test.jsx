@@ -32,7 +32,7 @@ describe('Numeric input component', () => {
     expect(screen.getByText('Test')).toBeInTheDocument();
   });
 
-  test('Should call function on click', async () => {
+  test('Should call function on new item select', async () => {
     customRender('Test');
     const selector = screen.getByText('Test');
     userEvent.click(selector);
