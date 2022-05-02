@@ -20,7 +20,7 @@ const connection = new Sequelize(
   process.env.DB_PASSWORD,
   config
 );
-const db = {};
+const db : any = {};
 
 const files = fs.readdirSync(__dirname);
 

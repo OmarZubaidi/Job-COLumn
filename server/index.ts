@@ -1,7 +1,6 @@
 'use strict';
-
 // Package imports
-const Express = require('express');
+import express from 'express'
 const cors = require('cors');
 const morgan = require('morgan');
 require('dotenv').config();
@@ -10,14 +9,15 @@ require('dotenv').config();
 const router = require('./router');
 const db = require('./models/index');
 
-const app = Express();
-const HOST_NAME = process.env.HOST_NAME;
-const PORT = process.env.PORT_NUMBER;
+
+const app: express.Application = express();
+const HOST_NAME : string | undefined = process.env.HOST_NAME;
+const PORT : string | undefined = process.env.PORT_NUMBER;
 
 app
   .use(cors())
   .use(morgan('short'))
-  .use(Express.json())
+  .use(express.json())
   .use(router);
 
 async function bootstrap () {
