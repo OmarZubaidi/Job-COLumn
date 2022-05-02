@@ -8,9 +8,11 @@ async function getAllJobs (_, res) {
     const allJobs = await Jobs.getAllJobs();
     res.status(200);
     res.send(allJobs);
+    return
   } catch (error) {
     console.error(error);
     res.sendStatus(500);
+    return
   }
 }
 

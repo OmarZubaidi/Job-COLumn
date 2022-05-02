@@ -6,7 +6,7 @@ import { useFilterContext } from '../../contexts/filter';
 import { filterer, renderer } from '../../helpers/small';
 import CITIES from '../../helpers/cities.json'
 
-function MultipleCitiesSelector ({ defaultValue }) {
+function MultipleCitiesSelector () {
   // Contexts
   const [filters, setFilters] = useFilterContext();
   const { cities } = filters;
@@ -41,7 +41,6 @@ function MultipleCitiesSelector ({ defaultValue }) {
   return (
     <MultiSelect
       activeItem={cities}
-      defaultValue={defaultValue}
       fill
       itemPredicate={filterer}
       itemRenderer={renderer}
