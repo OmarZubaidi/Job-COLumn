@@ -1,20 +1,20 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import PrimaryButton from './primaryButton';
+import SecondaryButton from './secondaryButton';
 
 const onClick = jest.fn();
 
 const customRender = () => {
   return render(
-    <PrimaryButton
+    <SecondaryButton
       onClick={onClick}
       text='TEST'
     />
   );
 };
 
-describe('Primary button component', () => {
+describe('Secondary button component', () => {
 
   test('Should render with correct text', () => {
     customRender();
