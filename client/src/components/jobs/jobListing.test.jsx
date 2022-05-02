@@ -19,7 +19,6 @@ const job =  {
 describe('JobListing component', ()=>{
   test('should render all children correctly', async () => {
     render(<JobListing job={job}/>, {wrapper: UserProvider});
-    screen.debug();
     const money = screen.getByText(/48,000/)
     expect(money).toBeInTheDocument();
     const jobTitle = screen.getByText(/Test Job Title/)
