@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const config = {
   host: process.env.HOST_NAME,
@@ -11,8 +12,10 @@ const config = {
   logging: false
 };
 
+let dbname = process.env.ENVIROMENT == 'testing' ? process.env.TEST_DB_NAME : process.env.DB_NAME;
+
 const connection = new Sequelize(
-  process.env.DB_NAME,
+  dbname,
   process.env.DB_USERNAME,
   process.env.DB_PASSWORD,
   config
