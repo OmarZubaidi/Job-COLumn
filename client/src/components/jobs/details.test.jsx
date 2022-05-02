@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/react"
 import { UserProvider } from "../contexts/user";
 import Details from "./details";
-import userEvent from '@testing-library/user-event';
 
 const job =  {
     employerName: "Cathcart Associates",
