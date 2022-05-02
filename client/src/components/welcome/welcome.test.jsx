@@ -15,9 +15,9 @@ const MockWrapper = ({ children }) => (
   </MemoryRouter>
 );
 
-describe('Error component', () => {
+describe('Welcome component', () => {
 
-  test('Welcome should render itself and children correctly', () => {
+  test('Should render itself and children correctly', () => {
     render(<Welcome />, { wrapper: MockWrapper });
      expect(screen.getByText('is a job board that considers the cost of living.')).toBeInTheDocument();
      expect(screen.getByRole('button', {name: /Start/i})).toBeInTheDocument();
