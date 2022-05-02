@@ -8,7 +8,7 @@ function ToggleDarkMode ({ text }) {
 
   return (
     <Button
-      ariaLabel={`Toggle ${darkMode ? 'Light' : 'Dark'} Mode`}
+      ariaLabel={`Toggle Dark Mode`}
       icon={darkMode ? 'flash' : 'moon'}
       onClick={toggleTheme}
       text={text}

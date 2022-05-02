@@ -21,7 +21,7 @@ describe('Error component', () => {
     render(<Welcome />, { wrapper: MockWrapper });
      expect(screen.getByText('is a job board that considers the cost of living.')).toBeInTheDocument();
      expect(screen.getByRole('button', {name: /Start/i})).toBeInTheDocument();
-     expect(screen.getByLabelText("Toggle Light Mode")).toBeInTheDocument();
+     expect(screen.getByLabelText("Toggle Dark Mode")).toBeInTheDocument();
      expect(screen.getByDisplayValue("20000")).toBeInTheDocument();
      expect(screen.getByText("London")).toBeInTheDocument();
   });
