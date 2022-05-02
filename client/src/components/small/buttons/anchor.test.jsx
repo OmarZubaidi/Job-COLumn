@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 
 import Anchor from './anchor';
 
-describe('Error component', () => {
+describe('Anchor component', () => {
 
   test('Anchor should render correctly and have correct Href', () => {
     render(
