@@ -1,9 +1,10 @@
 'use strict';
+import express from 'express'
 
 // Imports
 const Jobs = require('../models/jobs');
 
-async function getAllJobs (_, res) {
+async function getAllJobs (_: express.Request, res : express.Response ) {
   try {
     const allJobs = await Jobs.getAllJobs();
     res.status(200);
