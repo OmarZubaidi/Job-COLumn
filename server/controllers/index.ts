@@ -1,12 +1,13 @@
 'use strict';
 import express from 'express'
+import { Job } from '../interfaces';
 
 // Imports
 const Jobs = require('../models/jobs');
 
 async function getAllJobs (_: express.Request, res : express.Response ) {
   try {
-    const allJobs = await Jobs.getAllJobs();
+    const allJobs : Job[] = await Jobs.getAllJobs();
     res.status(200);
     res.send(allJobs);
     return

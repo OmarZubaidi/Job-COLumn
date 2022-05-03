@@ -1,6 +1,8 @@
 'use strict';
 
-function createJobsTable (connection, DataTypes) {
+import sequelize from "sequelize";
+//TODO FIND CORRECT TYPES FOR THOSE TWO DOWN HERE
+function createJobsTable (connection : any, DataTypes : any) {
   const Jobs = connection.define('Jobs', {
     jobId: DataTypes.INTEGER,
     employerId: DataTypes.INTEGER,
