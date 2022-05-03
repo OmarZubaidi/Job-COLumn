@@ -1,5 +1,3 @@
-// Local imports
-import { sort } from '../../../interfaces';
 import { useSortContext } from '../../contexts/sort';
 import Button from '../buttons/secondaryButton';
 import Select from './select';
