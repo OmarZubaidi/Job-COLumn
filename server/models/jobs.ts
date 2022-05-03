@@ -1,7 +1,7 @@
 'use strict';
 
 // Imports
-import {Job} from './interfaces'
+import {Job} from '../interfaces'
 const db = require('./index');
 
 async function getAllJobs () {
