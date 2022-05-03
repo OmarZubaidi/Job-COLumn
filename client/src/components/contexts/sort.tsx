@@ -1,11 +1,11 @@
-// Package imports
-import { createContext, useContext, useState } from 'react';
+import { createContext, Dispatch, SetStateAction, useContext, useState } from 'react';
+
 import {sort} from '../../interfaces'
 
-const Context = createContext(null);
+const Context = createContext<[sort, Dispatch<SetStateAction<sort>>]>(null);
 
-export function SortProvider ({ children }) {
-  // States
+export function SortProvider ({ children }): JSX.Element {
+
   const [sort, setSort] = useState<sort | null>({
     category: 'Job Title',
     order: 'asc'
@@ -18,6 +18,6 @@ export function SortProvider ({ children }) {
   );
 }
 
-export function useSortContext () {
+export function useSortContext (): [sort, Dispatch<SetStateAction<sort>>] {
   return useContext(Context);
 }

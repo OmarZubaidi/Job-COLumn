@@ -1,14 +1,15 @@
 // Local imports
+import { sort } from '../../../interfaces';
 import { useSortContext } from '../../contexts/sort';
 import Button from '../buttons/secondaryButton';
 import Select from './select';
 
-function SortSelector () {
-  // Contexts
+function SortSelector (): JSX.Element {
+
   const [sort, setSort] = useSortContext();
   const { category } = sort;
 
-  const options = [
+  const options: string[] = [
     'Location',
     'Salary',
     'Expiry Date',
@@ -16,8 +17,7 @@ function SortSelector () {
     'Job Title'
   ];
 
-  // Select's onItemSelect
-  function onItemSelect (option) {
+  function onItemSelect (option: string): void {
     setSort({
       ...sort,
       category: option
@@ -26,15 +26,18 @@ function SortSelector () {
 
   return (
     <Select
-      activeItem={category}
+      text={category}
       filterable={false}
       items={options}
-      leftIcon='select'
+      icon='select'
       onItemSelect={onItemSelect}
     >
       <Button
         text={category}
         icon='select'
+        ariaLabel={undefined}
+        id={undefined}
+        onClick={undefined}
       />
     </Select>
   )
