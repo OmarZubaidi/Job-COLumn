@@ -13,9 +13,14 @@ export interface modifiers {
   matchesPredicate: boolean
 }
 
-export interface customFormGroupProps extends FormGroupProps {
-  children?: React.ReactNode,
-}
+// export interface filters {
+//   keywords, cities, salary
+// }
+
+
+
+
+
 
 // Workaround for children type of blueprint components
 declare global {
