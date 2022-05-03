@@ -2,7 +2,7 @@
 import { H5, Icon } from '@blueprintjs/core';
 
 // Local imports
-import Sorts from '../../small/input/sorts';
+import Sorts from '../../small/input/sorts.tsx';
 import PrimaryButton from '../../small/buttons/primaryButton';
 import SecondaryButton from '../../small/buttons/secondaryButton';
 

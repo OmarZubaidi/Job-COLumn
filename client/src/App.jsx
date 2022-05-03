@@ -15,7 +15,7 @@ import { UserProvider } from './components/contexts/user';
 import { JobsProvider } from './components/contexts/jobs';
 import { FilterProvider } from './components/contexts/filter';
 import { FilteredJobsProvider } from './components/contexts/filteredJobs';
-import { SortProvider } from './components/contexts/sort';
+import { SortProvider } from './components/contexts/sort.tsx';
 
 // Styling
 import 'normalize.css/normalize.css';

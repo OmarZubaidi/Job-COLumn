@@ -1,7 +1,9 @@
 // Local imports
-import { useSortContext } from '../../contexts/sort';
+import { useSortContext } from '../../contexts/sort.tsx';
 import Button from '../buttons/secondaryButton';
 import Select from './select';
+
+
 
 function SortSelector () {
   // Contexts
