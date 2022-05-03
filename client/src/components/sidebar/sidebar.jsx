@@ -6,7 +6,7 @@ import { Divider } from '@blueprintjs/core';
 import { useFilterContext } from '../contexts/filter';
 import { useFilteredJobsContext } from '../contexts/filteredJobs';
 import { useJobsContext } from '../contexts/jobs';
-import { useSortContext } from '../contexts/sort.tsx';
+import { useSortContext } from '../contexts/sort';
 import { useThemeContext } from '../contexts/theme';
 import { useUserContext } from '../contexts/user';
 import {
