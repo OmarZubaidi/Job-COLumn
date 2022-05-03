@@ -1,6 +1,6 @@
 // Package imports
 import { createContext, Dispatch, SetStateAction, useContext, useState } from 'react';
-import { filter } from './interface';
+import { filter } from '../../interfaces'
 
 const Context = createContext<[filter, Dispatch<SetStateAction<filter>>]>(null);
 

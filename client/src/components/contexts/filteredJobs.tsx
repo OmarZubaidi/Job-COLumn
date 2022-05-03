@@ -1,6 +1,7 @@
 // Package imports
 import { createContext,Dispatch, SetStateAction, useContext, useState } from 'react';
-import { job } from './interface';
+import { job } from '../../interfaces'
+
 
 const Context = createContext<[job[], Dispatch<SetStateAction<job[]>>]>(null);
 
