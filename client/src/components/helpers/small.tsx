@@ -1,4 +1,5 @@
 import { MenuItem } from '@blueprintjs/core';
+import React, { Key, ReactNode } from 'react';
 import { item } from './interfaces';
 
 export function filterer (query: string, item: item) {
@@ -10,15 +11,14 @@ export function filterer (query: string, item: item) {
 }
 
 // TODO types
-export function renderer (item: item, { handleClick, modifiers }) {
+export function renderer (item: item, { handleClick, modifiers }): JSX.Element {
   if (!modifiers.matchesPredicate) return null;
-  console.log(handleClick);
   return (
     <MenuItem
-      key={item?.name ? item.name : item}
+      key={(item?.name ? item.name : item) as Key}
       onClick={handleClick}
       selected={modifiers.active}
-      text={item?.name ? item.name : item}
+      text={(item?.name ? item.name : item) as ReactNode}
     />
   )
 }
