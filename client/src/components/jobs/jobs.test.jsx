@@ -35,8 +35,7 @@ describe('Jobs component', () => {
     expect(powered).toBeInTheDocument();
     const filter = screen.getByText(/keywords/i)
     expect(filter).toBeInTheDocument();
-    //test for spinning when 0 jobs?
-    //test for joblistings?
-
+    //TODOtest for spinning when 0 jobs?
+    //TODOtest for joblistings?
   });
 })
