@@ -1,4 +1,3 @@
-// Local imports
 import Logo from '../small/logo/logo';
 import Anchor from '../small/buttons/anchor';
 
@@ -7,12 +6,11 @@ export function numberFormatter(number: number): string {
   return number.toLocaleString('en-US');
 }
 
-// Header and logo
-export const headerAndLogo = <header>
-  <Logo />
-</header>
+export const headerAndLogo =
+  <header>
+    <Logo />
+  </header>
 
-// Footer
 export const footer =
   <footer>
     Powered by <Anchor href='https://www.reed.co.uk/'>
