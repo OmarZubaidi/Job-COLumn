@@ -17,7 +17,6 @@ type rendererOptionsProps = {
 
 export function renderer (item: item, { handleClick, modifiers }: rendererOptionsProps): JSX.Element {
   if (!modifiers.matchesPredicate) return null;
-  console.log(modifiers)
   return (
     <MenuItem
       key={(item?.name ? item.name : item) as Key}
