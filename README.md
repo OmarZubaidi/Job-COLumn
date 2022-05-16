@@ -81,7 +81,7 @@
 
 ## Demo and Screenshots
 
-Watch the [demo](https://youtu.be/C0Esqn_uidY).
+Watch the [demo](https://youtu.be/C0Esqn_uidY) or [try it](https://OmarZubaidi.github.io/Job-COLumn/) for yourself.
 
 ### Desktop, Dark Mode
 
@@ -230,5 +230,6 @@ Project Link: [on GitHub](https://github.com/OmarZubaidi/Job-COLumn/).
 
 ## Acknowledgements
 
-- [Reed](https://www.reed.co.uk/)
+- [Google Maps](https://maps.google.com/)
 - [Numbeo](https://www.numbeo.com/cost-of-living/)
+- [Reed](https://www.reed.co.uk/)
