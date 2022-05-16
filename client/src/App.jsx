@@ -1,7 +1,3 @@
-// TODO add README.md in root directory
-// TODO convert to direct API call before deployment
-// TODO environment variables for front-end. Reed and GMaps APIs.
-
 // Package imports
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FocusStyleManager } from '@blueprintjs/core';
@@ -26,7 +22,7 @@ import './App.scss';
 // Accessibility
 FocusStyleManager.onlyShowFocusOnTabs();
 
-function App () {
+function App() {
   return (
     <ThemeProvider>
       <UserProvider>
@@ -34,7 +30,7 @@ function App () {
           <FilterProvider>
             <FilteredJobsProvider>
               <SortProvider>
-                <Router>
+                <Router basename={process.env.PUBLIC_URL}>
                   <Routes>
                     <Route path='/' element={<Welcome />} />
                     <Route path='/jobs' element={<Jobs />} />
