@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Job-COLumn/static/css/main.3d64f2e2.css",
-    "main.js": "/Job-COLumn/static/js/main.35854342.js",
+    "main.js": "/Job-COLumn/static/js/main.dcb694f4.js",
     "static/media/blueprint-icons-20.eot?": "/Job-COLumn/static/media/blueprint-icons-20.7c675118c62235e8ba85.eot",
     "static/media/blueprint-icons-20.ttf?": "/Job-COLumn/static/media/blueprint-icons-20.58cecdd9d530e9748708.ttf",
     "static/media/blueprint-icons-16.eot?": "/Job-COLumn/static/media/blueprint-icons-16.eeaaf48f3aa9749d8399.eot",
@@ -14,10 +14,10 @@
     "static/media/GBP.svg": "/Job-COLumn/static/media/GBP.0d49b42b310904791e9bef7e651d0174.svg",
     "index.html": "/Job-COLumn/index.html",
     "main.3d64f2e2.css.map": "/Job-COLumn/static/css/main.3d64f2e2.css.map",
-    "main.35854342.js.map": "/Job-COLumn/static/js/main.35854342.js.map"
+    "main.dcb694f4.js.map": "/Job-COLumn/static/js/main.dcb694f4.js.map"
   },
   "entrypoints": [
     "static/css/main.3d64f2e2.css",
-    "static/js/main.35854342.js"
+    "static/js/main.dcb694f4.js"
   ]
 }
