@@ -190,7 +190,7 @@ REACT_APP_GOOGLE_MAPS_API_KEY=Your_API_Key
 
 ```bash
 HOST_NAME=127.0.0.1
-PORT_NUMBER=3001
+PORT=3001
 
 DB_NAME=Your_database_name
 DB_USERNAME=Your_database_username

@@ -13,7 +13,7 @@ const db = require('./models/index');
 
 const app = Express();
 const HOST_NAME = process.env.HOST_NAME;
-const PORT = process.env.PORT_NUMBER;
+const PORT = process.env.PORT;
 
 app
   .use(cors())

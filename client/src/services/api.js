@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 // Local imports
-const rootUrl = 'http://127.0.0.1:3001';
+const rootUrl = 'https://job-column.herokuapp.com/';
 
 export async function getAllJobs() {
   try {
