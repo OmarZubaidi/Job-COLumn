@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/OmarZubaidi/Job-COLumn/issues"
   },
-  "homepage": "https://github.com/OmarZubaidi/Job-COLumn#readme"
+  "homepage": "https://github.com/OmarZubaidi/Job-COLumn#readme",
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "axios": "^0.27.2"
+  }
 }

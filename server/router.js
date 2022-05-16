@@ -1,8 +1,8 @@
 // Package imports
 const { Router } = require('express');
-const { getAllJobs } = require('./controllers');
+const { getNewJobs } = require('./controllers');
 
 const router = Router();
-router.get('/jobs', getAllJobs);
+router.get('/jobs', getNewJobs);
 
 module.exports = router;
