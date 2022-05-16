@@ -27,4 +27,4 @@ async function getNewJobs(req, res) {
   }
 }
 
-module.exports = { getAllJobs, getNewJobs };
+module.exports = { /* getAllJobs, */ getNewJobs };
