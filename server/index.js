@@ -9,7 +9,7 @@ require('dotenv').config();
 
 // Local imports
 const router = require('./router');
-const db = require('./models/index');
+// const db = require('./models/index');
 
 const app = Express();
 const HOST_NAME = process.env.HOST_NAME;
@@ -24,8 +24,8 @@ app
 
 async function bootstrap() {
   try {
-    await db.connection.authenticate();
-    await db.connection.sync();
+    // await db.connection.authenticate();
+    // await db.connection.sync();
     app.listen(PORT, () => {
       console.log(`http://${HOST_NAME}:${PORT}/`);
     });
