@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8ed71c1.css",
-    "main.js": "/static/js/main.397e756e.js",
-    "static/media/blueprint-icons-20.eot?": "/static/media/blueprint-icons-20.7c675118c62235e8ba85.eot",
-    "static/media/blueprint-icons-20.ttf?": "/static/media/blueprint-icons-20.58cecdd9d530e9748708.ttf",
-    "static/media/blueprint-icons-16.eot?": "/static/media/blueprint-icons-16.eeaaf48f3aa9749d8399.eot",
-    "static/media/blueprint-icons-16.ttf?": "/static/media/blueprint-icons-16.8dad11908ed3e5e9e47a.ttf",
-    "static/media/blueprint-icons-20.woff?": "/static/media/blueprint-icons-20.37c48d148164e6a1b9b1.woff",
-    "static/media/blueprint-icons-16.woff?": "/static/media/blueprint-icons-16.bdd01e08b240fc397e5a.woff",
-    "static/media/blueprint-icons-20.woff2?": "/static/media/blueprint-icons-20.16fbb3eddfb5d29019ae.woff2",
-    "static/media/blueprint-icons-16.woff2?": "/static/media/blueprint-icons-16.d59af1d43e67354fabe4.woff2",
-    "static/media/logo.svg": "/static/media/logo.4c42be8d93a8ee8748e72c2031ecfb50.svg",
-    "static/media/GBP.svg": "/static/media/GBP.0d49b42b310904791e9bef7e651d0174.svg",
-    "index.html": "/index.html",
-    "main.e8ed71c1.css.map": "/static/css/main.e8ed71c1.css.map",
-    "main.397e756e.js.map": "/static/js/main.397e756e.js.map"
+    "main.css": "/Job-COLumn/static/css/main.3d64f2e2.css",
+    "main.js": "/Job-COLumn/static/js/main.35854342.js",
+    "static/media/blueprint-icons-20.eot?": "/Job-COLumn/static/media/blueprint-icons-20.7c675118c62235e8ba85.eot",
+    "static/media/blueprint-icons-20.ttf?": "/Job-COLumn/static/media/blueprint-icons-20.58cecdd9d530e9748708.ttf",
+    "static/media/blueprint-icons-16.eot?": "/Job-COLumn/static/media/blueprint-icons-16.eeaaf48f3aa9749d8399.eot",
+    "static/media/blueprint-icons-16.ttf?": "/Job-COLumn/static/media/blueprint-icons-16.8dad11908ed3e5e9e47a.ttf",
+    "static/media/blueprint-icons-20.woff?": "/Job-COLumn/static/media/blueprint-icons-20.37c48d148164e6a1b9b1.woff",
+    "static/media/blueprint-icons-16.woff?": "/Job-COLumn/static/media/blueprint-icons-16.bdd01e08b240fc397e5a.woff",
+    "static/media/blueprint-icons-20.woff2?": "/Job-COLumn/static/media/blueprint-icons-20.16fbb3eddfb5d29019ae.woff2",
+    "static/media/blueprint-icons-16.woff2?": "/Job-COLumn/static/media/blueprint-icons-16.d59af1d43e67354fabe4.woff2",
+    "static/media/logo.svg": "/Job-COLumn/static/media/logo.4c42be8d93a8ee8748e72c2031ecfb50.svg",
+    "static/media/GBP.svg": "/Job-COLumn/static/media/GBP.0d49b42b310904791e9bef7e651d0174.svg",
+    "index.html": "/Job-COLumn/index.html",
+    "main.3d64f2e2.css.map": "/Job-COLumn/static/css/main.3d64f2e2.css.map",
+    "main.35854342.js.map": "/Job-COLumn/static/js/main.35854342.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8ed71c1.css",
-    "static/js/main.397e756e.js"
+    "static/css/main.3d64f2e2.css",
+    "static/js/main.35854342.js"
   ]
 }
