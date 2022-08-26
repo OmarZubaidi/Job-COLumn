@@ -81,7 +81,7 @@
 
 ## Demo and Screenshots
 
-Watch the [demo](https://youtu.be/C0Esqn_uidY) or [try it](https://OmarZubaidi.github.io/Job-COLumn/) for yourself.
+Watch the [demo](https://youtu.be/C0Esqn_uidY).
 
 ### Desktop, Dark Mode
 
