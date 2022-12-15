@@ -16,8 +16,8 @@
   <summary>Table of Contents</summary>
   <ul>
     <li>
-      <a href='#demo-and-screenshots'>
-        Demo and Screenshots
+      <a href='#screenshots'>
+        Screenshots
       </a>
       <ul>
         <li>
@@ -79,9 +79,7 @@
   </ul>
 </details>
 
-## Demo and Screenshots
-
-Watch the [demo](https://youtu.be/C0Esqn_uidY).
+## Screenshots
 
 ### Desktop, Dark Mode
 
