@@ -1,40 +1,27 @@
 import { Divider } from "@blueprintjs/core";
 import { ChangeEvent, useEffect, useState } from "react";
-// import { useFilterContext } from '../contexts/filter';
-// import { useFilteredJobsContext } from '../contexts/filteredJobs';
-// import { useJobsContext } from '../contexts/jobs';
-// import { useSortContext } from '../contexts/sort';
-// import { useThemeContext } from '../contexts/theme';
-// import { useUserContext } from '../contexts/user';
-// import css from '../contexts/themes.scss';
+import {
+  useFilterContext,
+  useFilteredJobsContext,
+  useJobsContext,
+  useSortContext,
+  useThemeContext,
+  useUserContext,
+} from "../contexts";
+import css from "../contexts/themes.scss";
 import { filterJobs, SortDefined, sortJobs } from "../helpers";
-import { Job, Sort } from "../interfaces";
 import { BackButton, CustomButton, FiltersDefined, Footer, Logo, ToggleDarkMode, UserDetails } from ".";
 import "./sidebar.scss";
 
-const largeScreen = window.innerWidth >= 1900; // css.mobile.split('p')[0];
+const largeScreen = window.innerWidth >= css.mobile.split("p")[0];
 
 export function Sidebar() {
-  // TODO bring back contexts
-  // const [darkMode] = useThemeContext();
-  const darkMode = true;
-  // const [user] = useUserContext();
-  const user = { location: "London", salary: 20_000 };
-  // const [filters, setFilters] = useFilterContext();
-  const [filters, setFilters] = useState({
-    keywords: "",
-    cities: [],
-    salary: 0,
-  });
-  // const [sort, setSort] = useSortContext();
-  const [sort, setSort] = useState<Sort>({
-    category: "Location",
-    order: "asc",
-  });
-  // const [jobs] = useJobsContext();
-  const jobs: Job[] = [];
-  // const [, setFilteredJobs] = useFilteredJobsContext();
-  const setFilteredJobs = (value: any) => jobs;
+  const { darkMode } = useThemeContext();
+  const { user } = useUserContext();
+  const { filters, setFilters } = useFilterContext();
+  const { sort, setSort } = useSortContext();
+  const { jobs } = useJobsContext();
+  const { setFilteredJobs } = useFilteredJobsContext();
   const [navbarVisible, setNavbarVisible] = useState(true);
 
   // Filter setter functions

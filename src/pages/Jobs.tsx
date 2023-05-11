@@ -1,30 +1,27 @@
 import { useEffect, useState } from "react";
 import { Spinner } from "@blueprintjs/core";
-// import { useFilteredJobsContext } from '../contexts/filteredJobs';
-// import { useJobsContext } from '../contexts/jobs';
-// import { getAllJobs } from "../api";
+import { useFilteredJobsContext, useJobsContext } from "../contexts";
+import { getAllJobs } from "../api";
 import JOBS from "../api/jobs.json";
 import { JobListing, Sidebar } from "../components";
-import { Job } from "../interfaces";
 import "./jobs.scss";
 
 export function Jobs() {
-  // TODO bring back contexts
-  // const [, setJobs] = useJobsContext();
-  // const [filteredJobs, setFilteredJobs] = useFilteredJobsContext();
+  const { setJobs } = useJobsContext();
+  const { filteredJobs, setFilteredJobs } = useFilteredJobsContext();
   const [isLoading, setIsLoading] = useState(true);
-  // TODO deploy jobs JSON to GitHub pages
-  useEffect(() => setIsLoading(true), []);
   // Get all jobs once
-  // useEffect(() => {
-  //   getAllJobs().then((result) => {
-  //     setIsLoading(false);
-  //     setJobs(result.slice(0, 200));
-  //     setFilteredJobs(result.slice(0, 200));
-  //   });
-  // }, []);
-
-  const filteredJobs: Job[] = JOBS;
+  const limit = 500;
+  useEffect(() => {
+    getAllJobs().then((result) => {
+      setIsLoading(false);
+      // TODO Fetch from GitHub deployed JSON file
+      // setJobs(result.slice(0, limit));
+      // setFilteredJobs(result.slice(0, limit));
+      setJobs(JOBS.slice(0, limit));
+      setFilteredJobs(JOBS.slice(0, limit));
+    });
+  }, [setFilteredJobs, setJobs]);
 
   return (
     <main>

@@ -1,11 +1,8 @@
-import { useState } from "react";
-// import { useSortContext } from '../contexts/sort';
+import { useSortContext } from "../contexts";
 import { CustomButton, CustomSelect } from ".";
 
 export function Sorts() {
-  // TODO bring back contexts
-  // const [sort, setSort] = useSortContext();
-  const [sort, setSort] = useState({ category: "Location" });
+  const { sort, setSort } = useSortContext();
   const { category } = sort;
 
   const options = ["Location", "Salary", "Expiry Date", "Posted Date", "Job Title"];

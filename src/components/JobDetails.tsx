@@ -1,5 +1,5 @@
 import { decode } from "he";
-// import { useUserContext } from '../contexts/user';
+import { useUserContext } from "../contexts";
 import { numberFormatter } from "../helpers";
 import { CustomAnchor, CustomButton, Map } from ".";
 import "./details.scss";
@@ -12,9 +12,7 @@ interface Props {
 export function JobDetails({ job }: Props) {
   const { date, employerName, expirationDate, jobDescription, jobUrl, locationName, minimumSalary, maximumSalary } =
     job;
-  // TODO bring back contexts
-  // const [user] = useUserContext();
-  const user = { location: "London", salary: 20_000 };
+  const { user } = useUserContext();
 
   return (
     <div className="details">

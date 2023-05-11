@@ -1,17 +1,11 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Footer, Logo, UserForm } from "../components";
-// import { useUserContext } from "../contexts/user";
+import { useUserContext } from "../contexts";
 import "./home.scss";
 
 export function Home() {
   const navigate = useNavigate();
-  // TODO bring back contexts
-  // const [user, setUser] = useUserContext();
-  const [user, setUser] = useState({
-    location: "London",
-    salary: 20_000,
-  });
+  const { user, setUser } = useUserContext();
 
   function onValueChange(value: number) {
     setUser({

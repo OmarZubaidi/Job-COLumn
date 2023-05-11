@@ -1,7 +1,6 @@
 import { MultiSelect } from "@blueprintjs/select";
-import { useState } from "react";
 import CITIES from "../api/cities.json";
-// import { useFilterContext } from '../contexts/filter';
+import { useFilterContext } from "../contexts";
 import { filterer, renderer } from "../helpers";
 import { City } from "../interfaces";
 
@@ -11,9 +10,7 @@ interface Props {
 }
 
 export function MultiCity({ className, defaultValue }: Props) {
-  // TODO bring back contexts
-  // const [filters, setFilters] = useFilterContext();
-  const [filters, setFilters] = useState({ cities: ["London", "Manchester"] });
+  const { filters, setFilters } = useFilterContext();
   const { cities } = filters;
 
   function onItemSelect(city: City) {

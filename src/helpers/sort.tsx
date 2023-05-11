@@ -1,7 +1,7 @@
 import { H5, Icon } from "@blueprintjs/core";
-// import css from "../contexts/themes.scss";
 import { CustomButton, Sorts } from "../components";
 import { Job, Sort } from "../interfaces";
+import css from "../contexts/themes.scss";
 
 interface SortDefinedProps {
   filterAndSort: any;
@@ -15,7 +15,7 @@ export function SortDefined({ filterAndSort, sortOrder, sortOnClick }: SortDefin
       <H5>Sort by</H5>
       <Sorts />
       <CustomButton
-        icon={<Icon color={"red" || "css.rose"} icon={`sort-${sortOrder}`} />}
+        icon={<Icon color={css.rose} icon={`sort-${sortOrder}`} />}
         onClick={sortOnClick}
         variant="secondary"
       />

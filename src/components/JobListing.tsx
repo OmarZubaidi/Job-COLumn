@@ -1,9 +1,9 @@
 import { Dialog, Icon } from "@blueprintjs/core";
 import { useState } from "react";
 import CITIES from "../api/cities.json";
-// import { useUserContext } from '../contexts/user';
+import { useUserContext } from "../contexts";
 import { numberFormatter } from "../helpers";
-import { Job, User } from "../interfaces";
+import { Job } from "../interfaces";
 import { JobDetails } from ".";
 import "./jobListing.scss";
 
@@ -14,9 +14,7 @@ interface Props {
 export function JobListing({ job }: Props) {
   const { jobTitle, minimumSalary, maximumSalary, date, expirationDate, employerName, locationName } = job;
 
-  // TODO bring back contexts
-  // const [user] = useUserContext();
-  const user: User = { location: "London", salary: 20_000 };
+  const { user } = useUserContext();
   const [isOpen, setIsOpen] = useState(false);
 
   // Salary math
