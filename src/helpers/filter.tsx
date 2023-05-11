@@ -1,4 +1,5 @@
 import { MenuItem } from "@blueprintjs/core";
+import { MouseEventHandler } from "react";
 
 // To display only the queried items
 // TODO any could be City? Maybe a string?
@@ -8,7 +9,11 @@ export function filterer(query: string, item: any): boolean {
 }
 
 // To display each item in the list
-export function renderer(item: any, { handleClick, modifiers }: { handleClick: any; modifiers: any }) {
+// TODO no any
+export function renderer(
+  item: any,
+  { handleClick, modifiers }: { handleClick: MouseEventHandler<HTMLElement>; modifiers: any }
+) {
   if (!modifiers.matchesPredicate) return null;
   return (
     <MenuItem

@@ -1,11 +1,13 @@
+import { IconName, MaybeElement } from "@blueprintjs/core";
 import { Select } from "@blueprintjs/select";
 import { ReactNode, SyntheticEvent } from "react";
 import { filterer, renderer } from "../helpers";
 
+// TODO no any
 interface Props {
   children: ReactNode;
   filterable: boolean;
-  icon: any;
+  icon: IconName | MaybeElement;
   items: any[];
   onItemSelect: (item: any, event?: SyntheticEvent<HTMLElement>) => void;
   text: string;

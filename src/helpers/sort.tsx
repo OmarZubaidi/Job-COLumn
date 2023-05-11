@@ -3,10 +3,11 @@ import { CustomButton, Sorts } from "../components";
 import { Job, Sort } from "../interfaces";
 import css from "../contexts/themes.scss";
 
+// TODO no any
 interface SortDefinedProps {
   filterAndSort: any;
   sortOrder: "asc" | "desc";
-  sortOnClick: any;
+  sortOnClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
 }
 
 export function SortDefined({ filterAndSort, sortOrder, sortOnClick }: SortDefinedProps) {

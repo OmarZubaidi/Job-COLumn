@@ -15,7 +15,7 @@ export function Numeric({ className, defaultValue, fill, onValueChange, placehol
       className={className}
       defaultValue={defaultValue}
       fill={fill}
-      leftIcon={<GBP />}
+      leftElement={<GBP />}
       majorStepSize={10000}
       min={0}
       onValueChange={onValueChange}

@@ -7,6 +7,7 @@ export function Sorts() {
 
   const options = ["Location", "Salary", "Expiry Date", "Posted Date", "Job Title"];
 
+  // TODO no any
   function onItemSelect(option: any) {
     setSort({
       ...sort,

@@ -1,11 +1,9 @@
-// Package imports
-import { Classes, Button, Intent, MaybeElement } from "@blueprintjs/core";
-import { BlueprintIcons_16Id } from "@blueprintjs/icons/lib/esm/generated-icons/16px/blueprint-icons-16";
+import { Classes, Button, IconName, Intent, MaybeElement } from "@blueprintjs/core";
 import { MouseEvent } from "react";
 
 interface Props {
   ariaLabel?: string;
-  icon: BlueprintIcons_16Id | MaybeElement;
+  icon: IconName | MaybeElement;
   id?: string;
   onClick?: (event: MouseEvent<HTMLElement>) => void;
   text?: string;

@@ -8,7 +8,6 @@ export function Cities(): ReactElement {
   const { user, setUser } = useUserContext();
   const { location } = user;
 
-  // Select's onItemSelect
   function onItemSelect(city: City) {
     setUser({
       ...user,

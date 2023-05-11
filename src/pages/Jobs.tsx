@@ -9,13 +9,19 @@ export function Jobs() {
   const { setJobs } = useJobsContext();
   const { filteredJobs, setFilteredJobs } = useFilteredJobsContext();
   const [isLoading, setIsLoading] = useState(true);
+
   // Get all jobs once
   const limit = 500;
   useEffect(() => {
     getAllJobs().then((result) => {
       setIsLoading(false);
-      setJobs(result.slice(0, limit));
-      setFilteredJobs(result.slice(0, limit));
+      if (result == null) {
+        setJobs([]);
+        setFilteredJobs([]);
+      } else {
+        setJobs(result.slice(0, limit));
+        setFilteredJobs(result.slice(0, limit));
+      }
     });
   }, [setFilteredJobs, setJobs]);
 
