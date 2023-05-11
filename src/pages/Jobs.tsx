@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Spinner } from "@blueprintjs/core";
 import { useFilteredJobsContext, useJobsContext } from "../contexts";
 import { getAllJobs } from "../api";
-import JOBS from "../api/jobs.json";
 import { JobListing, Sidebar } from "../components";
 import "./jobs.scss";
 
@@ -15,11 +14,8 @@ export function Jobs() {
   useEffect(() => {
     getAllJobs().then((result) => {
       setIsLoading(false);
-      // TODO Fetch from GitHub deployed JSON file
-      // setJobs(result.slice(0, limit));
-      // setFilteredJobs(result.slice(0, limit));
-      setJobs(JOBS.slice(0, limit));
-      setFilteredJobs(JOBS.slice(0, limit));
+      setJobs(result.slice(0, limit));
+      setFilteredJobs(result.slice(0, limit));
     });
   }, [setFilteredJobs, setJobs]);
 

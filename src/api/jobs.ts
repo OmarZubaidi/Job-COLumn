@@ -1,9 +1,8 @@
-const rootUrl = "http://localhost:3000/Job-Column";
+const jobsUrl = "https://raw.githubusercontent.com/OmarZubaidi/OmarZubaidi/main/Job-COLumn-Data/jobs.json";
 
 export async function getAllJobs() {
   try {
-    // TODO replace rootUrl with JSON deployed on GitHub pages
-    const jobs = await fetch(`${rootUrl}/jobs`);
+    const jobs = await fetch(jobsUrl);
     return await jobs.json();
   } catch (error) {
     console.error(error);
