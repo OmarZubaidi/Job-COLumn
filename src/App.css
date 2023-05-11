@@ -1,0 +1,124 @@
+.dark {
+  background-color: var(--background);
+}
+
+.light {
+  background-color: var(--background);
+}
+
+.logo {
+  fill: var(--primary);
+}
+
+.rose {
+  color: var(--primary);
+}
+
+.background-color {
+  background-color: var(--background);
+}
+
+.background {
+  background-color: var(--background);
+  color: var(--inverse);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.bp4-input-dark {
+  background-color: var(--primary);
+}
+
+.bp4-input {
+  background-color: var(--background) !important;
+}
+
+.bp4-active,
+.bp4-input:focus {
+  box-shadow: 0 0 0 1px var(--primary), inset 0 0 0 1px var(--primary), 0 0 0 2px var(--supplement) !important;
+}
+
+.bp4-button {
+  background-color: var(--background) !important;
+}
+
+.bp4-divider {
+  border-color: var(--muted-inverse) !important;
+}
+
+.bp4-heading {
+  color: var(--primary) !important;
+}
+
+.bp4-intent-primary {
+  background-color: var(--primary) !important;
+  color: var(--background) !important;
+}
+
+.bp4-outlined {
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+.bp4-dialog {
+  background-color: var(--background) !important;
+}
+
+.bp4-menu {
+  background-color: var(--background) !important;
+  border-color: var(--quieter-inverse) !important;
+}
+
+.bp4-popover-arrow-fill {
+  fill: var(--quieter-inverse) !important;
+}
+
+.bp4-selected {
+  background-color: var(--muted-inverse) !important;
+}
+
+.bp4-popover {
+  border-color: var(--quieter-inverse) !important;
+  box-shadow: 0 0 0 1px var(--muted-inverse), 0 2px 4px var(--muted-inverse), 0 8px 24px var(--muted-inverse) !important;
+}
+
+.bp4-dialog-header {
+  background-color: var(--muted-inverse) !important;
+}
+
+.bp4-overlay-backdrop {
+  background-color: var(--overlay);
+}
+
+header {
+  align-self: flex-start;
+  width: 200px;
+  margin-left: 50px;
+}
+
+footer {
+  color: var(--quieter-inverse);
+  font-size: smaller;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+main {
+  display: flex !important;
+  padding: 25px;
+}
+main .bold {
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  main {
+    padding-top: 0px;
+    flex-direction: column;
+  }
+}
+
+:export {
+  mobile: 600px;
+}/*# sourceMappingURL=App.css.map */
