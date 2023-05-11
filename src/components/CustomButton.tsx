@@ -8,7 +8,7 @@ interface Props {
   icon: BlueprintIcons_16Id | MaybeElement;
   id?: string;
   onClick?: (event: MouseEvent<HTMLElement>) => void;
-  text: string;
+  text?: string;
   variant: "primary" | "secondary";
 }
 

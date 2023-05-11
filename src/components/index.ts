@@ -9,6 +9,8 @@ export * from "./GBP";
 export * from "./Logo";
 export * from "./MultiCity";
 export * from "./Numeric";
+export * from "./Sidebar";
 export * from "./Sorts";
 export * from "./ToggleDarkMode";
+export * from "./UserDetails";
 export * from "./UserForm";
