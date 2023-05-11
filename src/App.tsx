@@ -9,7 +9,7 @@ import { FocusStyleManager } from "@blueprintjs/core";
 import "normalize.css/normalize.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
-import { Error, Home } from "./pages";
+import { Error, Home, Jobs } from "./pages";
 import "./App.scss";
 
 // Accessibility
@@ -21,7 +21,7 @@ export function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/jobs" element={<Jobs />} /> */}
+          <Route path="/jobs" element={<Jobs />} />
           <Route path="/*" element={<Error />} />
         </Routes>
       </Router>

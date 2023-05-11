@@ -14,7 +14,7 @@ import "./sidebar.scss";
 
 const largeScreen = window.innerWidth >= 1900; // css.mobile.split('p')[0];
 
-function Sidebar() {
+export function Sidebar() {
   // TODO bring back contexts
   // const [darkMode] = useThemeContext();
   const darkMode = true;
@@ -117,5 +117,3 @@ function Sidebar() {
     </nav>
   );
 }
-
-export default Sidebar;

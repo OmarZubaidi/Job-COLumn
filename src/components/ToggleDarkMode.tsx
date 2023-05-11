@@ -1,4 +1,4 @@
-// import { useThemeContext } from '../../contexts/theme';
+// import { useThemeContext } from '../contexts/theme';
 import { CustomButton } from "./CustomButton";
 
 interface Props {
