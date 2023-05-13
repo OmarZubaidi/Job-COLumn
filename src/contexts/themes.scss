@@ -9,8 +9,10 @@ $themes: (
     'inverse': $almost-black,
     'quieter-inverse': lighten($almost-black, 10%),
     'muted-inverse': darken($almost-white, 5%),
-    'overlay': rgba($almost-white, 0.75),
-    'supplement': rgba($rose1, 0.5),
+    'divider': darken($almost-white, 25%),
+    'overlay': rgba($almost-white, 75%),
+    'selection': rgba(lighten($rose1, 33%), 60%),
+    'supplement': rgba($rose1, 50%),
   ),
   'dark': (
     'primary': $rose5,
@@ -18,8 +20,10 @@ $themes: (
     'inverse': $almost-white,
     'quieter-inverse': darken($almost-white, 10%),
     'muted-inverse': lighten($almost-black, 5%),
-    'overlay': rgba($almost-black, 0.75),
-    'supplement': rgba($rose5, 0.5),
+    'divider': lighten($almost-black, 25%),
+    'overlay': rgba($almost-black, 75%),
+    'selection': rgba(darken($rose5, 33%), 60%),
+    'supplement': rgba($rose5, 50%),
   ),
 );
 
