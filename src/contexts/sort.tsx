@@ -1,5 +1,6 @@
 import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
 import { Sort } from '../interfaces';
+import { defaultFunction, defaultSort } from '.';
 
 interface ContextProps {
   sort: Sort;
@@ -7,11 +8,8 @@ interface ContextProps {
 }
 
 const Context = createContext<ContextProps>({
-  sort: {
-    category: 'Job Title',
-    order: 'asc',
-  },
-  setSort: () => {},
+  sort: defaultSort,
+  setSort: defaultFunction,
 });
 
 interface Props {

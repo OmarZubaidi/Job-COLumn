@@ -20,6 +20,7 @@ export interface Job {
   jobDescription: string;
   applications: number;
   jobUrl: string;
+  id: number;
 }
 
 export type Option = 'Location' | 'Salary' | 'Expiry Date' | 'Posted Date' | 'Job Title';

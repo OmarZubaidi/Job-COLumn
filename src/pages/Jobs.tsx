@@ -30,7 +30,7 @@ export function Jobs() {
       <Sidebar />
       <div className="all-jobs">
         {filteredJobs.length ? (
-          filteredJobs.map((job) => <JobListing key={job.jobId} job={job} />)
+          filteredJobs.map((job) => <JobListing key={job.id} job={job} />)
         ) : isLoading ? (
           <Spinner />
         ) : (

@@ -1,5 +1,6 @@
 import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
 import { User } from '../interfaces';
+import { defaultFunction, defaultUser } from '.';
 
 interface ContextProps {
   user: User;
@@ -7,11 +8,8 @@ interface ContextProps {
 }
 
 const Context = createContext<ContextProps>({
-  user: {
-    location: 'London',
-    salary: 20_000,
-  },
-  setUser: () => {},
+  user: defaultUser,
+  setUser: defaultFunction,
 });
 
 interface Props {

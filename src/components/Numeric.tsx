@@ -4,17 +4,16 @@ import { GBP } from '.';
 interface Props {
   className?: string;
   defaultValue?: number;
-  fill: boolean;
   onValueChange: (valueAsNumber: number, valueAsString: string, inputElement: HTMLInputElement | null) => void;
   placeholder?: string;
 }
 
-export function Numeric({ className, defaultValue, fill, onValueChange, placeholder }: Props) {
+export function Numeric({ className, defaultValue, onValueChange, placeholder }: Props) {
   return (
     <NumericInput
       className={className}
       defaultValue={defaultValue}
-      fill={fill}
+      fill={true}
       leftElement={<GBP />}
       majorStepSize={10000}
       min={0}

@@ -9,7 +9,7 @@ export function Footer(): ReactElement {
         <CustomAnchor href="https://www.numbeo.com/">Numbeo</CustomAnchor>.
       </p>
       <p>
-        Jobs API last updated on <span className="rose">May 13 2023 08:18:26</span> UTC.
+        Jobs API last updated on <span className="rose">May 13 2023 10:32:42</span> UTC.
       </p>
     </footer>
   );

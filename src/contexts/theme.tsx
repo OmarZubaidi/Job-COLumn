@@ -1,4 +1,5 @@
 import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
+import { defaultFunction, defaultTheme } from '.';
 
 interface ContextProps {
   darkMode: boolean;
@@ -6,8 +7,8 @@ interface ContextProps {
 }
 
 const Context = createContext<ContextProps>({
-  darkMode: true,
-  toggleTheme: () => {},
+  darkMode: defaultTheme,
+  toggleTheme: defaultFunction,
 });
 
 interface Props {

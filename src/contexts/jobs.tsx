@@ -1,5 +1,6 @@
 import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
 import { Job } from '../interfaces';
+import { defaultFunction, defaultJobs } from '.';
 
 interface ContextProps {
   jobs: Job[];
@@ -7,26 +8,8 @@ interface ContextProps {
 }
 
 const Context = createContext<ContextProps>({
-  jobs: [
-    {
-      jobId: 0,
-      employerId: 0,
-      employerName: '',
-      employerProfileId: null,
-      employerProfileName: null,
-      jobTitle: '',
-      locationName: '',
-      minimumSalary: 0,
-      maximumSalary: 0,
-      currency: 'GBP',
-      expirationDate: '',
-      date: '',
-      jobDescription: '',
-      applications: 0,
-      jobUrl: '',
-    },
-  ],
-  setJobs: () => {},
+  jobs: defaultJobs,
+  setJobs: defaultFunction,
 });
 
 interface Props {

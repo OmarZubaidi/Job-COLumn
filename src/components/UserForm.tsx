@@ -18,7 +18,7 @@ export function UserForm({ defaultValue, onValueChange, buttonOnClick }: Props):
       <div>
         <p>Current Salary</p>
         <div id="user-salary">
-          <Numeric defaultValue={defaultValue} fill={false} onValueChange={onValueChange} />
+          <Numeric defaultValue={defaultValue} onValueChange={onValueChange} />
         </div>
       </div>
       <div id="user-buttons">

@@ -34,7 +34,7 @@ export function FiltersDefined({ keywords, keywordsOnChange, numericOnChange }: 
       {/* Salary */}
       <div className="filter-details">
         <div className="filter-label">Salary</div>
-        <Numeric className="filter-value" fill={true} onValueChange={numericOnChange} placeholder="Minimum Salary" />
+        <Numeric className="filter-value" onValueChange={numericOnChange} placeholder="Minimum Salary" />
       </div>
     </div>
   );

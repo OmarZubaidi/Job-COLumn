@@ -1,5 +1,6 @@
 import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
 import { Filter } from '../interfaces';
+import { defaultFilter, defaultFunction } from '.';
 
 interface ContextProps {
   filters: Filter;
@@ -7,12 +8,8 @@ interface ContextProps {
 }
 
 const Context = createContext<ContextProps>({
-  filters: {
-    keywords: '',
-    cities: [],
-    salary: 0,
-  },
-  setFilters: () => {},
+  filters: defaultFilter,
+  setFilters: defaultFunction,
 });
 
 interface Props {
