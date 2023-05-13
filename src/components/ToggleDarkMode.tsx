@@ -12,7 +12,7 @@ export function ToggleDarkMode({ text }: Props) {
     <CustomButton
       ariaLabel={`Toggle ${darkMode ? 'Light' : 'Dark'} Mode`}
       icon={darkMode ? 'flash' : 'moon'}
-      onClick={() => toggleTheme}
+      onClick={toggleTheme}
       text={text || ''}
       variant="secondary"
     />
