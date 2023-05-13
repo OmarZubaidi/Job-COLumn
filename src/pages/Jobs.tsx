@@ -11,7 +11,7 @@ export function Jobs() {
   const [isLoading, setIsLoading] = useState(true);
 
   // Get all jobs once
-  const limit = 500;
+  const limit = 1000;
   useEffect(() => {
     getAllJobs().then((result) => {
       setIsLoading(false);

@@ -16,15 +16,7 @@ export function Sorts() {
   }
 
   return (
-    <CustomSelect
-      // TODO remove ts-ignore
-      // @ts-ignore
-      activeItem={category}
-      filterable={false}
-      items={options}
-      leftIcon="select"
-      onItemSelect={onItemSelect}
-    >
+    <CustomSelect filterable={false} items={options} onItemSelect={onItemSelect}>
       <CustomButton text={category} icon="select" variant="secondary" />
     </CustomSelect>
   );

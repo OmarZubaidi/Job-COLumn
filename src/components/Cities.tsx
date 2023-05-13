@@ -15,7 +15,7 @@ export function Cities(): ReactElement {
   }
 
   return (
-    <CustomSelect items={CITIES.map((city) => city.name)} onItemSelect={onItemSelect} text={location}>
+    <CustomSelect items={CITIES.map((city) => city.name)} onItemSelect={onItemSelect}>
       <CustomButton text={location} icon="locate" variant="secondary" />
     </CustomSelect>
   );

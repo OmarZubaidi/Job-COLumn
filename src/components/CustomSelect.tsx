@@ -7,13 +7,11 @@ interface Props {
   filterable?: boolean;
   items: string[];
   onItemSelect: (item: string, event?: SyntheticEvent<HTMLElement>) => void;
-  text: string;
 }
 
-export function CustomSelect({ children, filterable, items, onItemSelect, text }: Props) {
+export function CustomSelect({ children, filterable, items, onItemSelect }: Props) {
   return (
     <Select2
-      activeItem={text}
       filterable={filterable}
       itemPredicate={filterer}
       itemRenderer={renderer}
