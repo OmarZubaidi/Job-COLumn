@@ -49,8 +49,8 @@ nav {
   margin-bottom: 15px;
 }
 
-.bp4-numeric-input {
-  padding-left: 7px;
+.filter-value {
+  width: 100%;
 }
 
 @media (max-width: $mobile) {
@@ -66,9 +66,5 @@ nav {
 
   #toggle-sidebar {
     display: flex;
-  }
-
-  .filter-value {
-    width: 100%;
   }
 }
