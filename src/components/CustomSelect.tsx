@@ -1,32 +1,26 @@
-import { IconName, MaybeElement } from '@blueprintjs/core';
-import { Select } from '@blueprintjs/select';
+import { Select2 } from '@blueprintjs/select';
 import { ReactNode, SyntheticEvent } from 'react';
 import { filterer, renderer } from '../helpers';
 
 interface Props {
   children: ReactNode;
-  filterable: boolean;
-  icon: IconName | MaybeElement;
+  filterable?: boolean;
   items: string[];
   onItemSelect: (item: string, event?: SyntheticEvent<HTMLElement>) => void;
   text: string;
 }
 
-export function CustomSelect({ children, filterable, icon, items, onItemSelect, text }: Props) {
-  // TODO migrate to Select2
+export function CustomSelect({ children, filterable, items, onItemSelect, text }: Props) {
   return (
-    <Select
+    <Select2
       activeItem={text}
       filterable={filterable}
       itemPredicate={filterer}
       itemRenderer={renderer}
       items={items}
-      // TODO remove ts-ignore
-      // @ts-ignore
-      leftIcon={icon}
       onItemSelect={onItemSelect}
     >
       {children}
-    </Select>
+    </Select2>
   );
 }

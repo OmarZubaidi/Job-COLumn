@@ -1,4 +1,4 @@
-import { MultiSelect } from '@blueprintjs/select';
+import { MultiSelect2 } from '@blueprintjs/select';
 import CITIES from '../api/cities.json';
 import { useFilterContext } from '../contexts';
 import { filterer, renderer } from '../helpers';
@@ -34,9 +34,8 @@ export function MultiCity({ className }: Props) {
     });
   }
 
-  // TODO migrate to MultiSelect2
   return (
-    <MultiSelect
+    <MultiSelect2
       className={className}
       fill
       itemPredicate={filterer}
