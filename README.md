@@ -16,8 +16,8 @@
   <summary>Table of Contents</summary>
   <ul>
     <li>
-      <a href='#screenshots'>
-        Screenshots
+      <a href='#demo-and-screenshots'>
+        Demo and Screenshots
       </a>
       <ul>
         <li>
@@ -79,7 +79,9 @@
   </ul>
 </details>
 
-## Screenshots
+## Demo and Screenshots
+
+[Try it out!](https://omarzubaidi.github.io/Job-COLumn/)
 
 ### Desktop, Dark Mode
 
@@ -135,6 +137,7 @@ Of all the jobs that do have salaries, it will show you which jobs will give you
 
 ### Built With
 
+- [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 - [BlueprintJS](https://blueprintjs.com/)
 - [SASS](https://sass-lang.com/)
@@ -152,13 +155,11 @@ To get a local copy up and running, follow these steps.
 You need to have installed:
 
 - [Node Version Manager](https://github.com/nvm-sh/nvm)
-- The latest LTS version of Node (I used v17.4.0)
+- The latest LTS version of Node (I used v18.16.0)
 
 ```bash
 nvm install npm@latest -g
 ```
-
-- A [Reed](https://www.reed.co.uk/) account and [API key](https://www.reed.co.uk/developers/jobseeker).
 
 ### Installation
 
@@ -172,40 +173,12 @@ git clone https://github.com/OmarZubaidi/Job-COLumn.git
 
 ```bash
 npm i
-cd client
-npm i
-cd ../server
-npm i
 ```
 
-- Create your `.env` file in the `client` folder as below.
+- Run the project
 
 ```bash
-REACT_APP_GOOGLE_MAPS_API_KEY=Your_API_Key
-```
-
-- Similarly for the `server` folder
-
-```bash
-HOST_NAME=127.0.0.1
-PORT=3001
-
-DB_NAME=Your_database_name
-DB_USERNAME=Your_database_username
-DB_PASSWORD=Your_database_password
-```
-
-- Run the server in a terminal.
-
-```bash
-npm run startServer
-```
-
-- Populate your database with jobs from the [Reed API](https://www.reed.co.uk/developers/jobseeker).
-- Run the client in another terminal (should automatically open to http://localhost:3000/)
-
-```bash
-npm run startClient
+npm start
 ```
 
 ## Contributing
