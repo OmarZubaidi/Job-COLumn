@@ -1,6 +1,6 @@
-import { H5, Icon, InputGroup } from "@blueprintjs/core";
-import { ChangeEventHandler } from "react";
-import { MultiCity, Numeric } from ".";
+import { H5, Icon, InputGroup } from '@blueprintjs/core';
+import { ChangeEventHandler } from 'react';
+import { MultiCity, Numeric } from '.';
 
 interface Props {
   keywords: string;

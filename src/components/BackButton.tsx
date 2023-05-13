@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router-dom";
-import { CustomButton } from "./CustomButton";
+import { useNavigate } from 'react-router-dom';
+import { CustomButton } from './CustomButton';
 
 export function BackButton() {
   const navigate = useNavigate();

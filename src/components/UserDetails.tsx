@@ -1,5 +1,5 @@
-import { numberFormatter } from "../helpers";
-import { User } from "../interfaces";
+import { numberFormatter } from '../helpers';
+import { User } from '../interfaces';
 
 export function UserDetails({ location, salary }: User) {
   return (

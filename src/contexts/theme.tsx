@@ -1,4 +1,4 @@
-import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from "react";
+import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
 
 interface ContextProps {
   darkMode: boolean;
@@ -19,7 +19,7 @@ export function ThemeProvider({ children }: Props) {
 
   // Because BlueprintJS' dark mode toggle sucks
   const body = document.body;
-  body.className = `background ${darkMode ? "bp4-dark dark" : "bp4-body light"}`;
+  body.className = `background ${darkMode ? 'bp4-dark dark' : 'bp4-body light'}`;
 
   function toggleTheme() {
     toggleDarkMode((mode) => !mode);

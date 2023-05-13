@@ -1,5 +1,5 @@
-import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from "react";
-import { Filter } from "../interfaces";
+import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
+import { Filter } from '../interfaces';
 
 interface ContextProps {
   filters: Filter;
@@ -8,7 +8,7 @@ interface ContextProps {
 
 const Context = createContext<ContextProps>({
   filters: {
-    keywords: "",
+    keywords: '',
     cities: [],
     salary: 0,
   },
@@ -21,7 +21,7 @@ interface Props {
 
 export function FilterProvider({ children }: Props) {
   const [filters, setFilters] = useState<Filter>({
-    keywords: "",
+    keywords: '',
     cities: [],
     salary: 0,
   });

@@ -1,7 +1,7 @@
-import { FocusStyleManager } from "@blueprintjs/core";
-import "@blueprintjs/core/lib/css/blueprint.css";
-import "@blueprintjs/icons/lib/css/blueprint-icons.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { FocusStyleManager } from '@blueprintjs/core';
+import '@blueprintjs/core/lib/css/blueprint.css';
+import '@blueprintjs/icons/lib/css/blueprint-icons.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   FilteredJobsProvider,
   FilterProvider,
@@ -9,9 +9,9 @@ import {
   SortProvider,
   ThemeProvider,
   UserProvider,
-} from "./contexts";
-import { Error, Home, Jobs } from "./pages";
-import "./App.scss";
+} from './contexts';
+import { Error, Home, Jobs } from './pages';
+import './App.scss';
 
 // Accessibility
 FocusStyleManager.onlyShowFocusOnTabs();

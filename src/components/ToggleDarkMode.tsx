@@ -1,5 +1,5 @@
-import { useThemeContext } from "../contexts";
-import { CustomButton } from "./CustomButton";
+import { useThemeContext } from '../contexts';
+import { CustomButton } from './CustomButton';
 
 interface Props {
   text?: string;
@@ -10,10 +10,10 @@ export function ToggleDarkMode({ text }: Props) {
 
   return (
     <CustomButton
-      ariaLabel={`Toggle ${darkMode ? "Light" : "Dark"} Mode`}
-      icon={darkMode ? "flash" : "moon"}
+      ariaLabel={`Toggle ${darkMode ? 'Light' : 'Dark'} Mode`}
+      icon={darkMode ? 'flash' : 'moon'}
       onClick={() => toggleTheme}
-      text={text || ""}
+      text={text || ''}
       variant="secondary"
     />
   );

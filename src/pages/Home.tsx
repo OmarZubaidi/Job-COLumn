@@ -1,7 +1,7 @@
-import { useNavigate } from "react-router-dom";
-import { Footer, Logo, UserForm } from "../components";
-import { useUserContext } from "../contexts";
-import "./home.scss";
+import { useNavigate } from 'react-router-dom';
+import { Footer, Logo, UserForm } from '../components';
+import { useUserContext } from '../contexts';
+import './home.scss';
 
 export function Home() {
   const navigate = useNavigate();
@@ -17,8 +17,8 @@ export function Home() {
   const greeting = (
     <div className="welcome-text">
       <p>
-        Hello and welcome to{" "}
-        <span className="rose" style={{ fontWeight: "bold" }}>
+        Hello and welcome to{' '}
+        <span className="rose" style={{ fontWeight: 'bold' }}>
           Job COLumn
         </span>
         !
@@ -29,9 +29,9 @@ export function Home() {
   const description = (
     <div className="welcome-text">
       <p>
-        <span className="rose" style={{ fontWeight: "bold" }}>
+        <span className="rose" style={{ fontWeight: 'bold' }}>
           Job COLumn
-        </span>{" "}
+        </span>{' '}
         is a job board that considers the cost of living.
       </p>
       <p>It compares the minimum salary in a listed job with your current salary! Magic!</p>
@@ -73,7 +73,7 @@ export function Home() {
           {filters}
           {instructions}
         </section>
-        <UserForm defaultValue={user.salary} onValueChange={onValueChange} buttonOnClick={() => navigate("/jobs")} />
+        <UserForm defaultValue={user.salary} onValueChange={onValueChange} buttonOnClick={() => navigate('/jobs')} />
       </main>
       <Footer />
     </div>

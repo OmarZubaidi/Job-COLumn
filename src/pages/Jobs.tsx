@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { Spinner } from "@blueprintjs/core";
-import { useFilteredJobsContext, useJobsContext } from "../contexts";
-import { getAllJobs } from "../api";
-import { JobListing, Sidebar } from "../components";
-import "./jobs.scss";
+import { useEffect, useState } from 'react';
+import { Spinner } from '@blueprintjs/core';
+import { useFilteredJobsContext, useJobsContext } from '../contexts';
+import { getAllJobs } from '../api';
+import { JobListing, Sidebar } from '../components';
+import './jobs.scss';
 
 export function Jobs() {
   const { setJobs } = useJobsContext();
@@ -34,7 +34,7 @@ export function Jobs() {
         ) : isLoading ? (
           <Spinner />
         ) : (
-          "No jobs. Lower your expectations."
+          'No jobs. Lower your expectations.'
         )}
       </div>
     </main>

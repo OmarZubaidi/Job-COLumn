@@ -1,5 +1,5 @@
-import { Divider } from "@blueprintjs/core";
-import { ChangeEvent, useEffect, useState } from "react";
+import { Divider } from '@blueprintjs/core';
+import { ChangeEvent, useEffect, useState } from 'react';
 import {
   useFilterContext,
   useFilteredJobsContext,
@@ -7,13 +7,13 @@ import {
   useSortContext,
   useThemeContext,
   useUserContext,
-} from "../contexts";
-import css from "../contexts/themes.scss";
-import { filterJobs, SortDefined, sortJobs } from "../helpers";
-import { BackButton, CustomButton, FiltersDefined, Footer, Logo, ToggleDarkMode, UserDetails } from ".";
-import "./sidebar.scss";
+} from '../contexts';
+import css from '../contexts/themes.scss';
+import { filterJobs, SortDefined, sortJobs } from '../helpers';
+import { BackButton, CustomButton, FiltersDefined, Footer, Logo, ToggleDarkMode, UserDetails } from '.';
+import './sidebar.scss';
 
-const largeScreen = window.innerWidth >= css.mobile.split("p")[0];
+const largeScreen = window.innerWidth >= css.mobile.split('p')[0];
 
 export function Sidebar() {
   const { darkMode } = useThemeContext();
@@ -43,7 +43,7 @@ export function Sidebar() {
   function sortOnClick() {
     setSort({
       ...sort,
-      order: `${sort.order === "asc" ? "desc" : "asc"}`,
+      order: `${sort.order === 'asc' ? 'desc' : 'asc'}`,
     });
   }
 
@@ -58,9 +58,9 @@ export function Sidebar() {
   }
 
   useEffect(() => {
-    window.addEventListener("resize", bringBackSidebar);
+    window.addEventListener('resize', bringBackSidebar);
     return () => {
-      window.removeEventListener("resize", bringBackSidebar);
+      window.removeEventListener('resize', bringBackSidebar);
     };
   }, []);
 
@@ -84,7 +84,7 @@ export function Sidebar() {
       </div>
       {navbarVisible && (
         <>
-          <ToggleDarkMode text={`${darkMode ? "Light Mode" : "Dark Mode"}`} />
+          <ToggleDarkMode text={`${darkMode ? 'Light Mode' : 'Dark Mode'}`} />
           <Divider />
           <UserDetails location={user.location} salary={user.salary} />
           <Divider />

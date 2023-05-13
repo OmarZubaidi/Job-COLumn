@@ -1,4 +1,4 @@
-import { Job } from "../interfaces";
+import { Job } from '../interfaces';
 
 interface FilterProps {
   keywords: string;
@@ -11,7 +11,7 @@ export function filterJobs(jobs: Job[], { keywords, cities, salary }: FilterProp
     let result = true;
     if (keywords) {
       result &&= keywords
-        .split(" ")
+        .split(' ')
         .every(
           (keyword) =>
             job.jobTitle.toLowerCase().includes(keyword.toLowerCase()) ||

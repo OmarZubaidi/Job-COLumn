@@ -1,11 +1,11 @@
-import { Dialog, Icon } from "@blueprintjs/core";
-import { useState } from "react";
-import CITIES from "../api/cities.json";
-import { useUserContext } from "../contexts";
-import { numberFormatter } from "../helpers";
-import { Job } from "../interfaces";
-import { JobDetails } from ".";
-import "./jobListing.scss";
+import { Dialog, Icon } from '@blueprintjs/core';
+import { useState } from 'react';
+import CITIES from '../api/cities.json';
+import { useUserContext } from '../contexts';
+import { numberFormatter } from '../helpers';
+import { Job } from '../interfaces';
+import { JobDetails } from '.';
+import './jobListing.scss';
 
 interface Props {
   job: Job;
@@ -24,7 +24,11 @@ export function JobListing({ job }: Props) {
   const isBetter = minimumSalary / user.salary / (jobIndex / userIndex) > 1;
 
   return (
-    <div className={`job-listing lighten-darken ${isBetter && "rose"}`} onClick={() => setIsOpen(true)}>
+    <div
+      className={`job-listing lighten-darken ${isBetter && 'rose'}`}
+      onClick={() => setIsOpen(true)}
+      style={{ cursor: 'pointer' }}
+    >
       <Dialog
         isCloseButtonShown={false}
         isOpen={isOpen}

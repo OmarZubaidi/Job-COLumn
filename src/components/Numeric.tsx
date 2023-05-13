@@ -1,5 +1,5 @@
-import { NumericInput } from "@blueprintjs/core";
-import { GBP } from ".";
+import { NumericInput } from '@blueprintjs/core';
+import { GBP } from '.';
 
 interface Props {
   className?: string;

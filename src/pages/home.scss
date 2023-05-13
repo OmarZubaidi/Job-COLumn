@@ -1,4 +1,4 @@
-@import "../App.scss";
+@import '../App.scss';
 
 .welcome {
   padding: 50px;
@@ -20,7 +20,7 @@
     &::before {
       position: absolute;
       margin-left: -15px;
-      content: "\2013";
+      content: '\2013';
     }
   }
 }

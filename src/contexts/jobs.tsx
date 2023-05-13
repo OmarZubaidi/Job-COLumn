@@ -1,5 +1,5 @@
-import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from "react";
-import { Job } from "../interfaces";
+import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
+import { Job } from '../interfaces';
 
 interface ContextProps {
   jobs: Job[];
@@ -11,19 +11,19 @@ const Context = createContext<ContextProps>({
     {
       jobId: 0,
       employerId: 0,
-      employerName: "",
+      employerName: '',
       employerProfileId: null,
       employerProfileName: null,
-      jobTitle: "",
-      locationName: "",
+      jobTitle: '',
+      locationName: '',
       minimumSalary: 0,
       maximumSalary: 0,
-      currency: "GBP",
-      expirationDate: "",
-      date: "",
-      jobDescription: "",
+      currency: 'GBP',
+      expirationDate: '',
+      date: '',
+      jobDescription: '',
       applications: 0,
-      jobUrl: "",
+      jobUrl: '',
     },
   ],
   setJobs: () => {},

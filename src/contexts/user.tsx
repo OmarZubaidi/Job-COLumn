@@ -1,5 +1,5 @@
-import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from "react";
-import { User } from "../interfaces";
+import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from 'react';
+import { User } from '../interfaces';
 
 interface ContextProps {
   user: User;
@@ -8,7 +8,7 @@ interface ContextProps {
 
 const Context = createContext<ContextProps>({
   user: {
-    location: "London",
+    location: 'London',
     salary: 20_000,
   },
   setUser: () => {},
@@ -20,7 +20,7 @@ interface Props {
 
 export function UserProvider({ children }: Props) {
   const [user, setUser] = useState<User>({
-    location: "London",
+    location: 'London',
     salary: 20_000,
   });
 

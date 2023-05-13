@@ -1,6 +1,6 @@
-import { FormGroup } from "@blueprintjs/core";
-import { MouseEvent, ReactElement } from "react";
-import { Cities, CustomButton, Numeric, ToggleDarkMode } from ".";
+import { FormGroup } from '@blueprintjs/core';
+import { MouseEvent, ReactElement } from 'react';
+import { Cities, CustomButton, Numeric, ToggleDarkMode } from '.';
 
 interface Props {
   defaultValue: number;

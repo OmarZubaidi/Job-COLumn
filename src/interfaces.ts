@@ -1,13 +1,5 @@
-export interface City {
-  name: string;
-  index: number;
-  latitude: number;
-  longitude: number;
-}
-
 export interface Filter {
   keywords: string;
-  // TODO string or City?
   cities: string[];
   salary: number;
 }
@@ -30,9 +22,11 @@ export interface Job {
   jobUrl: string;
 }
 
+export type Option = 'Location' | 'Salary' | 'Expiry Date' | 'Posted Date' | 'Job Title';
+
 export interface Sort {
-  category: "Location" | "Salary" | "Expiry Date" | "Posted Date" | "Job Title";
-  order: "asc" | "desc";
+  category: Option;
+  order: 'asc' | 'desc';
 }
 
 export interface User {

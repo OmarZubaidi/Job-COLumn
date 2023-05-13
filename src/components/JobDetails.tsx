@@ -1,9 +1,9 @@
-import { decode } from "he";
-import { useUserContext } from "../contexts";
-import { numberFormatter } from "../helpers";
-import { Job } from "../interfaces";
-import { CustomAnchor, CustomButton, Map } from ".";
-import "./details.scss";
+import { decode } from 'he';
+import { useUserContext } from '../contexts';
+import { numberFormatter } from '../helpers';
+import { Job } from '../interfaces';
+import { CustomAnchor, CustomButton, Map } from '.';
+import './details.scss';
 
 interface Props {
   job: Job;

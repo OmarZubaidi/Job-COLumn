@@ -1,5 +1,5 @@
-import { BackButton } from "../components";
-import "./error.scss";
+import { BackButton } from '../components';
+import './error.scss';
 
 export function Error() {
   return (
